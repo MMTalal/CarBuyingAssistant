@@ -6,12 +6,11 @@ if car_type == "New":
     print(f"We have {car_type} cars available.")
     
     # Prompt the user to select a color for the new car
-    color = input("What color would you like? Red or Black? ").capitalize().strip()
+    color = input("What color would you like? ").capitalize().strip()
+    colors = ['White', 'Yellow', 'Red', 'Pink', 'Blue', 'Gray', 'Black', 'Orange', 'Green', 'Violet', 'Purple', 'Brown', 'Indigo', 'Silver', 'Golden']
     
     # Handle the user's color selection for a new car
-    if color == "Red":
-        print(f"We have a {color} {car_type} car available.")
-    elif color == "Black":
+    if color in colors:
         print(f"We have a {color} {car_type} car available.")
     else:
         print("Sorry, we don't have that color in stock.")
@@ -42,12 +41,11 @@ elif car_type == "Used":
     print(f"We have {car_type} cars available.")
     
     # Prompt the user to select a color for the used car
-    color = input("What color would you like? Red or Black? ").capitalize().strip()
-    
+    color = input("What color would you like? ").capitalize().strip()
+    colors = ['White', 'Yellow', 'Red', 'Pink', 'Blue', 'Gray', 'Black', 'Orange', 'Green', 'Violet', 'Purple', 'Brown', 'Indigo', 'Silver', 'Golden']
+
     # Handle the user's color selection for a used car
-    if color == "Red":
-        print(f"We have a {color} {car_type} car available.")
-    elif color == "Black":
+    if color in colors:
         print(f"We have a {color} {car_type} car available.")
     else:
         print("Sorry, we don't have that color in stock.")
